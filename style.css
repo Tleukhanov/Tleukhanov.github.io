@@ -1,0 +1,150 @@
+/* Визитка — тёмная шахматная тема (семья: trainer + federation board) */
+
+:root {
+  --bg: #161512;
+  --box: #262421;
+  --box-alt: #2b2926;
+  --text: #e8e6e1;
+  --muted: #8f8b85;
+  --accent: #639f40;
+  --accent-hover: #528c34;
+  --link: #6490d2;
+  --border: #3a372f;
+  --gold: #d4a017;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Шапка */
+
+.topbar {
+  position: sticky;
+  top: 0;
+  background: rgba(22, 21, 18, 0.95);
+  border-bottom: 1px solid var(--border);
+  z-index: 10;
+}
+
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+}
+
+.brand { color: var(--text); font-weight: 700; font-size: 18px; }
+.brand:hover { text-decoration: none; }
+.brand-mark { color: var(--accent); }
+
+.nav a { color: var(--muted); margin-left: 20px; font-size: 14px; }
+.nav a:hover { color: var(--text); }
+
+/* Hero */
+
+.hero { padding: 72px 0 48px; }
+
+.hero-kicker {
+  color: var(--accent);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 14px;
+  margin: 0 0 8px;
+}
+
+.hero h1 { font-size: 44px; margin: 0 0 8px; letter-spacing: -0.5px; }
+
+.hero-sub { font-size: 20px; color: var(--muted); min-height: 32px; margin: 0 0 12px; }
+.caret { color: var(--accent); animation: blink 1s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+
+.hero-text { max-width: 640px; color: var(--muted); }
+
+.hero-cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
+
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  color: var(--text);
+  background: var(--box);
+  font-size: 15px;
+}
+.btn:hover { text-decoration: none; border-color: var(--accent); }
+.btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn-primary:hover { background: var(--accent-hover); }
+
+/* Секции */
+
+section { margin: 40px 0; }
+h2 { font-size: 26px; margin-bottom: 16px; }
+
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 720px) { .grid { grid-template-columns: 1fr; } }
+
+.card {
+  background: var(--box);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+}
+.card + .card { margin-top: 0; }
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.card-title { font-weight: 700; font-size: 16px; }
+.card p { color: var(--muted); font-size: 14px; margin: 8px 0; }
+
+.tags { display: flex; gap: 6px; flex-wrap: wrap; }
+.tags span {
+  font-size: 12px;
+  font-family: ui-monospace, Consolas, monospace;
+  background: var(--box-alt);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2px 8px;
+  color: var(--text);
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  white-space: nowrap;
+}
+.badge-good { background: #1e3a1e; color: #7bc47f; }
+.badge-blue { background: #1e2c4a; color: #8ab0e4; }
+.badge-neutral { background: #3a372f; color: var(--muted); }
+
+.contact-card { border-left: 3px solid var(--accent); }
+.muted { color: var(--muted); }
+
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 20px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+}

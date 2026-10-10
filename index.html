@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ералы Тлеуханов — AI Engineer (Python)</title>
+  <meta name="description" content="AI Engineer из Астаны: LLM-интеграции, RAG, бэкенд. TeenFreelance, English-бот, шахматная федерация.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#top"><span class="brand-mark">♞</span> tleukhanov</a>
+    <nav class="nav">
+      <a href="#projects">Проекты</a>
+      <a href="#stack">Стек</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+  <section class="hero">
+    <p class="hero-kicker">Астана · 17 · студент AI/ML</p>
+    <h1>Ералы Тлеуханов</h1>
+    <p class="hero-sub"><span id="typed"></span><span class="caret">▍</span></p>
+    <p class="hero-text">Довожу AI-фичи до продакшена: бэкенд, LLM-интеграции, RAG, тесты, доки. Отвечаю за фичу целиком — от идеи до мержа.</p>
+    <p class="hero-cta">
+      <a class="btn btn-primary" href="https://github.com/Tleukhanov" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://t.me/Napaleonwww" target="_blank" rel="noopener">Telegram</a>
+      <a class="btn" href="mailto:tleukhanov0409@mail.ru">Почта</a>
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Проекты</h2>
+    <div class="grid">
+      <article class="card">
+        <div class="card-header"><span class="card-title">TeenFreelance — backend + ML</span><span class="badge badge-good">прод</span></div>
+        <p>Бэкенд freelance-платформы: FastAPI + PostgreSQL. ML-модерация описаний (AUC 0.90), LLM-улучшение текстов, рекомендации исполнителей. Закрыл 3 IDOR, 65 тестов, CI, доки для фронта.</p>
+        <p class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>scikit-learn</span><span>LLM</span></p>
+      </article>
+      <article class="card">
+        <div class="card-header"><span class="card-title">English-бот — адаптивный AI-учитель</span><span class="badge badge-good">прод</span></div>
+        <p>Telegram-репетитор: уроки под интересы ученика, профиль в JSON, диагностика A1–C1. Мульти-провайдерная LLM-фабрика, RAG по материалам уроков (цитаты, честные отказы), голосовой контур STT/TTS.</p>
+        <p class="tags"><span>aiogram</span><span>OpenRouter</span><span>RAG</span><span>Embeddings</span></p>
+        <p><a href="https://github.com/Tleukhanov/English_practic_bot" target="_blank" rel="noopener">Код →</a></p>
+      </article>
+      <article class="card">
+        <div class="card-header"><span class="card-title">Шахматная федерация — автоматизация</span><span class="badge badge-blue">сейчас</span></div>
+        <p>Турниры Lichess по расписанию, WhatsApp-бот (анонсы, FAQ на RAG RU/KK, эскалация), аналитика клуба (тиры, дельты, топ месяца), дашборд.</p>
+        <p class="tags"><span>Lichess API</span><span>WAHA</span><span>RAG</span><span>SQLite</span></p>
+        <p><a href="https://github.com/Tleukhanov/lichess_auto_ai" target="_blank" rel="noopener">Код →</a></p>
+      </article>
+      <article class="card">
+        <div class="card-header"><span class="card-title">Kaggle + ML-пайплайны</span><span class="badge badge-neutral">архив</span></div>
+        <p>CatBoost/XGBoost, кросс-валидация, тюнинг, сравнение моделей. Reward-моделирование (предпочтения ответов LLM).</p>
+        <p class="tags"><span>CatBoost</span><span>pandas</span><span>CV</span></p>
+      </article>
+    </div>
+  </section>
+
+  <section id="stack">
+    <h2>Стек</h2>
+    <div class="card">
+      <p><strong>Пишу:</strong> Python, FastAPI, PostgreSQL, SQLAlchemy, REST API, pytest, Docker, Git</p>
+      <p><strong>AI:</strong> LLM-интеграции (OpenAI-совместимые API), RAG, Prompt Engineering, Embeddings, scikit-learn</p>
+      <p><strong>Читаю:</strong> TypeScript, JavaScript · <strong>Учу сейчас:</strong> LangGraph, агентные фреймворки</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Контакты</h2>
+    <div class="card contact-card">
+      <p>Открыт к стажировкам и джуниор-ролям (Астана / удалённо). Отвечаю быстро.</p>
+      <p class="hero-cta">
+        <a class="btn btn-primary" href="https://t.me/Napaleonwww" target="_blank" rel="noopener">Написать в Telegram</a>
+        <a class="btn" href="mailto:tleukhanov0409@mail.ru">tleukhanov0409@mail.ru</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">© <span id="year"></span> Ералы Тлеуханов · собрано руками, без конструкторов</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
