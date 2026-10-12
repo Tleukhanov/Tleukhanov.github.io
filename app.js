@@ -1,48 +1,41 @@
-// Печатающийся подзаголовок + год в подвале. Без фреймворков.
+// Эффект печати роли + текущий год
 
-const roles = [
-  'AI Engineer (Python)',
-  'LLM-интеграции и RAG',
-  'бэкенд, который уезжает в прод',
-];
+(function () {
+  var el = document.getElementById("typed");
+  var phrases = [
+    "AI Engineer · Python backend",
+    "LLM-интеграции · RAG-боты",
+    "ML-модерация · тесты · CI"
+  ];
+  var yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+  if (!el) return;
 
-const typedEl = document.getElementById('typed');
-let roleIndex = 0;
-let charIndex = 0;
-let deleting = false;
+  var pi = 0, ci = 0, deleting = false;
 
-function tick() {
-  const role = roles[roleIndex];
-  if (!deleting) {
-    charIndex += 1;
-    typedEl.textContent = role.slice(0, charIndex);
-    if (charIndex >= role.length) {
-      deleting = true;
-      setTimeout(tick, 1800);
-      return;
+  function tick() {
+    var phrase = phrases[pi];
+    if (!deleting) {
+      ci++;
+      el.textContent = phrase.slice(0, ci);
+      if (ci === phrase.length) {
+        deleting = true;
+        setTimeout(tick, 1800);
+        return;
+      }
+      setTimeout(tick, 60);
+    } else {
+      ci--;
+      el.textContent = phrase.slice(0, ci);
+      if (ci === 0) {
+        deleting = false;
+        pi = (pi + 1) % phrases.length;
+        setTimeout(tick, 400);
+        return;
+      }
+      setTimeout(tick, 28);
     }
-    setTimeout(tick, 55);
-  } else {
-    charIndex -= 1;
-    typedEl.textContent = role.slice(0, charIndex);
-    if (charIndex <= 0) {
-      deleting = false;
-      roleIndex = (roleIndex + 1) % roles.length;
-    }
-    setTimeout(tick, 28);
   }
-}
 
-document.getElementById('year').textContent = new Date().getFullYear();
-tick();
-
-// Плавный скролл по якорям
-document.querySelectorAll('a[href^="#"]').forEach((link) => {
-  link.addEventListener('click', (event) => {
-    const target = document.querySelector(link.getAttribute('href'));
-    if (target) {
-      event.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
-});
+  tick();
+})();

@@ -4,84 +4,114 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ералы Тлеуханов — AI Engineer (Python)</title>
-  <meta name="description" content="AI Engineer из Астаны: LLM-интеграции, RAG, бэкенд. TeenFreelance, English-бот, шахматная федерация.">
+  <meta name="description" content="Ералы Тлеуханов, AI/ML студент из Астаны. Python, бэкенд, LLM-интеграции, RAG и тесты. Открыт к стажировкам и junior-позициям.">
+  <meta property="og:title" content="Ералы Тлеуханов — AI Engineer (Python)">
+  <meta property="og:description" content="Довожу AI-фичи до продакшена: бэкенд, LLM-интеграции, RAG, тесты. Проекты и опыт.">
+  <meta property="og:type" content="website">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="topbar">
-  <div class="wrap topbar-inner">
-    <a class="brand" href="#top"><span class="brand-mark">♞</span> tleukhanov</a>
-    <nav class="nav">
-      <a href="#projects">Проекты</a>
-      <a href="#stack">Стек</a>
-      <a href="#contact">Контакты</a>
+<header class="site-header">
+  <div class="site-container header-inner">
+    <a href="#top" class="wordmark"><span>✳</span> tleukhanov<span>.</span></a>
+    <nav class="navigation" aria-label="Навигация">
+      <a href="#experience">Опыт</a><a href="#projects">Проекты</a><a href="#stack">Стек</a><a href="#contact">Контакты</a>
     </nav>
+    <span class="header-availability"><span class="status-dot"></span>Открыт к предложениям</span>
   </div>
 </header>
 
-<main class="wrap" id="top">
-  <section class="hero">
-    <p class="hero-kicker">Астана · 17 · студент AI/ML</p>
-    <h1>Ералы Тлеуханов</h1>
-    <p class="hero-sub"><span id="typed"></span><span class="caret">▍</span></p>
-    <p class="hero-text">Довожу AI-фичи до продакшена: бэкенд, LLM-интеграции, RAG, тесты, доки. Отвечаю за фичу целиком — от идеи до мержа.</p>
-    <p class="hero-cta">
-      <a class="btn btn-primary" href="https://github.com/Tleukhanov" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn" href="https://t.me/Napaleonwww" target="_blank" rel="noopener">Telegram</a>
-      <a class="btn" href="mailto:tleukhanov0409@mail.ru">Почта</a>
-    </p>
+<main>
+  <section class="hero site-container" id="top">
+    <div class="hero-copy">
+      <div class="eyebrow">AI / ML студент · 17 лет</div>
+      <h1>Ералы<span>Тлеуханов<span class="name-dot">.</span></span></h1>
+      <p class="hero-role"><span id="typed"></span><span class="caret">▍</span></p>
+      <p class="hero-description">Довожу AI-фичи до продакшена:<br>бэкенд, LLM-интеграции, RAG, тесты</p>
+      <div class="hero-links">
+        <a class="btn btn-primary" href="https://github.com/Tleukhanov" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="btn" href="https://t.me/Napaleonwww" target="_blank" rel="noopener">Telegram</a>
+        <a class="btn" href="mailto:tleukhanov0409@mail.ru">Email</a>
+      </div>
+      <div class="hero-meta"><span>📍 Astana, Kazakhstan</span><span>🎓 AI / ML студент</span></div>
+    </div>
+    <div class="hero-photo" aria-hidden="true"><span class="monogram">E·T</span><span class="monogram-sub">astana</span></div>
   </section>
 
-  <section id="projects">
-    <h2>Проекты</h2>
-    <div class="grid">
-      <article class="card">
-        <div class="card-header"><span class="card-title">TeenFreelance — backend + ML</span><span class="badge badge-good">прод</span></div>
-        <p>Бэкенд freelance-платформы: FastAPI + PostgreSQL. ML-модерация описаний (AUC 0.90), LLM-улучшение текстов, рекомендации исполнителей. Закрыл 3 IDOR, 65 тестов, CI, доки для фронта.</p>
-        <p class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>scikit-learn</span><span>LLM</span></p>
+  <section class="section site-container" id="experience">
+    <div class="section-heading"><h2><span class="section-number">01 /</span>Опыт</h2></div>
+    <div class="exp-grid">
+      <div class="exp-company">
+        <h3>TeenFreelance</h3>
+        <p>Backend + ML · стартап</p>
+        <span class="badge badge-good">прод</span>
+      </div>
+      <div class="exp-list">
+        <div class="exp-item"><span class="check">✓</span><span><strong>ML-модерация контента</strong> — ROC-AUC 0.90</span></div>
+        <div class="exp-item"><span class="check">✓</span><span>LLM-эндпоинт для улучшения текста</span></div>
+        <div class="exp-item"><span class="check">✓</span><span>Рекомендательная система</span></div>
+        <div class="exp-item"><span class="check">✓</span><span><strong>3 IDOR-уязвимости</strong> устранены</span></div>
+        <div class="exp-item"><span class="check">✓</span><span><strong>65 pytest-тестов</strong> и CI</span></div>
+        <div class="exp-item"><span class="check">✓</span><span>Документация API для фронтенда</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section site-container" id="projects">
+    <div class="section-heading"><h2><span class="section-number">02 /</span>Проекты</h2></div>
+    <div class="project-grid">
+      <article class="project-card">
+        <div class="project-top"><span class="project-icon">💬</span><a class="project-arrow" href="https://github.com/Tleukhanov/English_practic_bot" target="_blank" rel="noopener" aria-label="GitHub: English_practic_bot">↗</a></div>
+        <h3>English_practic_bot</h3>
+        <p>Адаптивный AI-репетитор английского в Telegram. Multi-provider LLM factory (OpenAI, Gemini, Anthropic, Ollama), RAG по урокам с цитатами и честными отказами, голосовой цикл STT/TTS.</p>
+        <div class="tags"><span>Python</span><span>aiogram</span><span>RAG</span><span>STT/TTS</span></div>
+        <a class="project-link" href="https://github.com/Tleukhanov/English_practic_bot" target="_blank" rel="noopener">Смотреть на GitHub ↗</a>
       </article>
-      <article class="card">
-        <div class="card-header"><span class="card-title">English-бот — адаптивный AI-учитель</span><span class="badge badge-good">прод</span></div>
-        <p>Telegram-репетитор: уроки под интересы ученика, профиль в JSON, диагностика A1–C1. Мульти-провайдерная LLM-фабрика, RAG по материалам уроков (цитаты, честные отказы), голосовой контур STT/TTS.</p>
-        <p class="tags"><span>aiogram</span><span>OpenRouter</span><span>RAG</span><span>Embeddings</span></p>
-        <p><a href="https://github.com/Tleukhanov/English_practic_bot" target="_blank" rel="noopener">Код →</a></p>
+      <article class="project-card">
+        <div class="project-top"><span class="project-icon">🏆</span><a class="project-arrow" href="https://github.com/Tleukhanov/lichess_auto_ai" target="_blank" rel="noopener" aria-label="GitHub: lichess_auto_ai">↗</a></div>
+        <h3>Chess federation automation</h3>
+        <p>Турниры Lichess по расписанию. WhatsApp-бот: анонсы, RAG FAQ на RU/KK и эскалация. База данных для аналитики и дашборд.</p>
+        <div class="tags"><span>Python</span><span>Lichess API</span><span>WhatsApp</span><span>SQLite</span></div>
+        <a class="project-link" href="https://github.com/Tleukhanov/lichess_auto_ai" target="_blank" rel="noopener">Смотреть на GitHub ↗</a>
       </article>
-      <article class="card">
-        <div class="card-header"><span class="card-title">Шахматная федерация — автоматизация</span><span class="badge badge-blue">сейчас</span></div>
-        <p>Турниры Lichess по расписанию, WhatsApp-бот (анонсы, FAQ на RAG RU/KK, эскалация), аналитика клуба (тиры, дельты, топ месяца), дашборд.</p>
-        <p class="tags"><span>Lichess API</span><span>WAHA</span><span>RAG</span><span>SQLite</span></p>
-        <p><a href="https://github.com/Tleukhanov/lichess_auto_ai" target="_blank" rel="noopener">Код →</a></p>
+      <article class="project-card">
+        <div class="project-top"><span class="project-icon">⚙️</span><a class="project-arrow" href="https://github.com/Tleukhanov/llm_integration_zavod" target="_blank" rel="noopener" aria-label="GitHub: llm_integration_zavod">↗</a></div>
+        <h3>llm_integration_zavod</h3>
+        <p>LLM-интеграция в видеопайплайн с автоматическим переключением провайдеров при сбоях.</p>
+        <div class="tags"><span>LLM</span><span>Video pipeline</span><span>Fallback</span></div>
+        <a class="project-link" href="https://github.com/Tleukhanov/llm_integration_zavod" target="_blank" rel="noopener">Смотреть на GitHub ↗</a>
       </article>
-      <article class="card">
-        <div class="card-header"><span class="card-title">Kaggle + ML-пайплайны</span><span class="badge badge-neutral">архив</span></div>
-        <p>CatBoost/XGBoost, кросс-валидация, тюнинг, сравнение моделей. Reward-моделирование (предпочтения ответов LLM).</p>
-        <p class="tags"><span>CatBoost</span><span>pandas</span><span>CV</span></p>
+      <article class="project-card">
+        <div class="project-top"><span class="project-icon">💻</span><span class="badge badge-neutral">🔒 Private repo — доступ по запросу</span></div>
+        <h3>TeenFreelance</h3>
+        <p>Бэкенд и ML для стартапа: модерация контента, улучшение текста через LLM, рекомендательная система, безопасность API и тесты.</p>
+        <div class="tags"><span>FastAPI</span><span>ML</span><span>pytest</span><span>CI</span></div>
+        <a class="project-link" href="https://github.com/Tleukhanov" target="_blank" rel="noopener">GitHub · запросить доступ ↗</a>
+        <p class="private-note">Код приватный (стартап), покажу доступ и расскажу на собесе</p>
       </article>
     </div>
   </section>
 
-  <section id="stack">
-    <h2>Стек</h2>
-    <div class="card">
-      <p><strong>Пишу:</strong> Python, FastAPI, PostgreSQL, SQLAlchemy, REST API, pytest, Docker, Git</p>
-      <p><strong>AI:</strong> LLM-интеграции (OpenAI-совместимые API), RAG, Prompt Engineering, Embeddings, scikit-learn</p>
-      <p><strong>Читаю:</strong> TypeScript, JavaScript · <strong>Учу сейчас:</strong> LangGraph, агентные фреймворки</p>
+  <section class="section site-container" id="stack">
+    <div class="section-heading"><h2><span class="section-number">03 /</span>Стек</h2></div>
+    <div class="stack-list">
+      <span class="core">Python</span><span class="core">FastAPI</span><span class="core">PostgreSQL</span><span>REST API</span><span>pytest</span><span>Docker</span><span>Git</span><span>OpenAI-compatible APIs</span><span>LLM</span><span>RAG</span><span>Prompt Engineering</span><span>scikit-learn</span><span>aiogram</span>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Контакты</h2>
-    <div class="card contact-card">
-      <p>Открыт к стажировкам и джуниор-ролям (Астана / удалённо). Отвечаю быстро.</p>
-      <p class="hero-cta">
-        <a class="btn btn-primary" href="https://t.me/Napaleonwww" target="_blank" rel="noopener">Написать в Telegram</a>
-        <a class="btn" href="mailto:tleukhanov0409@mail.ru">tleukhanov0409@mail.ru</a>
-      </p>
+  <section class="contact" id="contact">
+    <div class="availability"><span class="status-dot"></span>Открыт к стажировкам и junior-позициям</div>
+    <h2>Let's build the<br><span>future together</span></h2>
+    <div class="contact-links">
+      <a href="https://t.me/Napaleonwww" target="_blank" rel="noopener">✈ @Napaleonwww ↗</a>
+      <a href="mailto:tleukhanov0409@mail.ru">✉ tleukhanov0409@mail.ru ↗</a>
+      <a href="https://github.com/Tleukhanov" target="_blank" rel="noopener">🐙 github.com/Tleukhanov ↗</a>
     </div>
+    <p class="contact-note">Astana / remote</p>
   </section>
 </main>
 
-<footer class="footer">© <span id="year"></span> Ералы Тлеуханов · собрано руками, без конструкторов</footer>
+<footer class="site-container site-footer"><span>© <span id="year"></span> Ералы Тлеуханов</span><a href="#top">Наверх ↑</a></footer>
 
 <script src="app.js"></script>
 </body>
