@@ -89,22 +89,22 @@ a { text-decoration: none; }
   border-radius: 12px;
   background: var(--secondary);
   box-shadow: var(--soft-shadow);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+  display: grid;
+  place-items: center;
   overflow: hidden;
   margin: 0;
 }
 .hero-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.monogram { font-size: 56px; font-weight: 650; color: var(--primary); }
-.monogram-sub {
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hero-photo figcaption {
+  position: absolute;
+  bottom: 16px;
   font-family: monospace;
   font-size: 10px;
-  letter-spacing: 3px;
+  letter-spacing: 1.3px;
   text-transform: uppercase;
-  color: var(--muted-foreground);
+  color: #fff;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
 }
 
 /* Появление при входе */
