@@ -29,15 +29,17 @@ a { text-decoration: none; }
 /* Шапка */
 
 .site-header {
-  height: 86px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
   background: rgba(255, 255, 255, 0.92);
   z-index: 10;
+}
+.header-inner {
+  height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .wordmark { font-weight: 750; font-size: 20px; color: var(--foreground); display: flex; gap: 9px; align-items: center; }
 .wordmark span { color: var(--primary); }
@@ -204,8 +206,8 @@ a { text-decoration: none; }
 
 @media (max-width: 900px) {
   .hero h1 { font-size: 52px; }
-  .hero-photo { width: 288px; }
-  .hero-copy { width: 68%; }
+  .hero-copy { width: 100%; }
+  .hero-photo { position: static; width: 280px; margin: 30px 0 0; }
   .exp-grid { grid-template-columns: 200px 1fr; gap: 25px; }
   .project-grid { grid-template-columns: 1fr; }
   .header-availability { display: none; }
@@ -214,8 +216,12 @@ a { text-decoration: none; }
 @media (max-width: 640px) {
   .site-container { width: calc(100% - 40px); }
   .hero { padding-top: 42px; min-height: 0; }
-  .hero-photo { position: static; width: 232px; margin: 26px auto 0; }
+  .hero h1 { font-size: 44px; }
   .hero-copy { width: 100%; }
+  .hero-photo { width: 232px; margin: 26px auto 0; }
+  .hero-meta { flex-wrap: wrap; gap: 10px; }
+  .navigation { gap: 14px; }
+  .navigation a { font-size: 12px; }
   .exp-grid { grid-template-columns: 1fr; }
-  .navigation a:last-child { display: none; }
+  .contact h2 { font-size: 30px; }
 }
