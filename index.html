@@ -47,9 +47,10 @@
         <span class="badge badge-good">прод</span>
       </div>
       <div class="exp-list">
-        <div class="exp-item"><span class="check">✓</span><span><strong>ML-модерация контента</strong> — ROC-AUC 0.90</span></div>
+        <div class="exp-item"><span class="check">✓</span><span><strong>ML-модерация ТЗ</strong> — TF-IDF + LogReg, 3 класса, ROC-AUC 0.90 / 0.80 на синтетическом датасете</span></div>
+        <div class="exp-item"><span class="check">✓</span><span>Синтетический датасет: бенчмарк генераторов, поиск mode collapse</span></div>
         <div class="exp-item"><span class="check">✓</span><span>LLM-эндпоинт для улучшения текста</span></div>
-        <div class="exp-item"><span class="check">✓</span><span>Рекомендательная система</span></div>
+        <div class="exp-item"><span class="check">✓</span><span>Рекомендательный движок (backend)</span></div>
         <div class="exp-item"><span class="check">✓</span><span><strong>3 IDOR-уязвимости</strong> устранены</span></div>
         <div class="exp-item"><span class="check">✓</span><span><strong>65 pytest-тестов</strong> и CI</span></div>
         <div class="exp-item"><span class="check">✓</span><span>Документация API для фронтенда</span></div>
@@ -61,11 +62,11 @@
     <div class="section-heading"><h2><span class="section-number">02 /</span>Проекты</h2></div>
     <div class="project-grid">
       <article class="project-card">
-        <div class="project-top"><span class="project-icon">💬</span><a class="project-arrow" href="https://github.com/Tleukhanov/English_practic_bot" target="_blank" rel="noopener" aria-label="GitHub: English_practic_bot">↗</a></div>
+        <div class="project-top"><span class="project-icon">💬</span><a class="project-arrow" href="https://github.com/Tleukhanov/AdaptENG" target="_blank" rel="noopener" aria-label="GitHub: AdaptENG">↗</a></div>
         <h3>AdaptENG</h3>
-        <p>Персональный AI-репетитор английского (ex-English_practic_bot). Адаптивные уроки, RAG по грамматике, голосовой цикл STT/TTS. Готовится web-версия: FastAPI + Next.js.</p>
-        <div class="tags"><span>Python</span><span>FastAPI</span><span>RAG</span><span>Next.js</span></div>
-        <a class="project-link" href="https://github.com/Tleukhanov/English_practic_bot" target="_blank" rel="noopener">Смотреть на GitHub ↗</a>
+        <p>Персональный AI-репетитор английского: адаптивные уроки, диагностика уровня A1–C1, голосовой цикл STT/TTS, RAG по грамматике (54 правила) с цитатами, SRS по SM-2, 489 тестов и CI с Postgres. Есть web-версия: FastAPI + Next.js.</p>
+        <div class="tags"><span>Python</span><span>FastAPI</span><span>RAG</span><span>Next.js</span><span>PostgreSQL</span></div>
+        <a class="project-link" href="https://github.com/Tleukhanov/AdaptENG" target="_blank" rel="noopener">Смотреть на GitHub ↗</a>
       </article>
       <article class="project-card">
         <div class="project-top"><span class="project-icon">🏆</span><a class="project-arrow" href="https://github.com/Tleukhanov/lichess_auto_ai" target="_blank" rel="noopener" aria-label="GitHub: lichess_auto_ai">↗</a></div>
@@ -75,16 +76,30 @@
         <a class="project-link" href="https://github.com/Tleukhanov/lichess_auto_ai" target="_blank" rel="noopener">Смотреть на GitHub ↗</a>
       </article>
       <article class="project-card">
-        <div class="project-top"><span class="project-icon">⚙️</span><a class="project-arrow" href="https://github.com/Tleukhanov/llm_integration_zavod" target="_blank" rel="noopener" aria-label="GitHub: llm_integration_zavod">↗</a></div>
-        <h3>llm_integration_zavod</h3>
-        <p>LLM-интеграция в видеопайплайн с автоматическим переключением провайдеров при сбоях.</p>
-        <div class="tags"><span>LLM</span><span>Video pipeline</span><span>Fallback</span></div>
-        <a class="project-link" href="https://github.com/Tleukhanov/llm_integration_zavod" target="_blank" rel="noopener">Смотреть на GitHub ↗</a>
+        <div class="project-top"><span class="project-icon">🏛️</span><a class="project-arrow" href="https://github.com/Tleukhanov/chess_trainig_app" target="_blank" rel="noopener" aria-label="GitHub: chess_trainig_app">↗</a></div>
+        <h3>chess_trainig_app</h3>
+        <p>Персональный шахматный тренер: партии с Lichess, анализ Stockfish, объяснение ошибок через LLM, дебютный репертуар и дрели из собственных зевков. Инференс нейросети Maia-2 через ONNX с ручным энкодером доски. 741 тест.</p>
+        <div class="tags"><span>Python</span><span>FastAPI</span><span>ONNX</span><span>Stockfish</span><span>LLM</span></div>
+        <a class="project-link" href="https://github.com/Tleukhanov/chess_trainig_app" target="_blank" rel="noopener">Смотреть на GitHub ↗</a>
+      </article>
+      <article class="project-card">
+        <div class="project-top"><span class="project-icon">🎬</span><a class="project-arrow" href="https://github.com/Tleukhanov/shorts-factory" target="_blank" rel="noopener" aria-label="GitHub: shorts-factory">↗</a></div>
+        <h3>shorts-factory</h3>
+        <p>Фабрика коротких видео поверх открытого пайплайна shorts-clipper (MIT). Моя часть — 159 файлов / ~39 400 строк, включая 75 файлов тестов: шахматный модуль (PGN → решающий ход → отрисовка доски, Stockfish с честным фолбэком), stock-режим без чужого видео, локальный Piper TTS, compliance gate, отчёты по удержанию с грейдами A/B/C/D.</p>
+        <div class="tags"><span>Python</span><span>FFmpeg</span><span>Stockfish</span><span>Piper TTS</span><span>systemd</span></div>
+        <a class="project-link" href="https://github.com/Tleukhanov/shorts-factory" target="_blank" rel="noopener">Смотреть на GitHub ↗</a>
+      </article>
+      <article class="project-card">
+        <div class="project-top"><span class="project-icon">🛡️</span><a class="project-arrow" href="https://github.com/Tleukhanov/Fair_Play_Detector" target="_blank" rel="noopener" aria-label="GitHub: Fair_Play_Detector">↗</a></div>
+        <h3>Fair_Play_Detector</h3>
+        <p>Сервис вероятностного анализа партий Lichess на признаки машиноподобной игры. Group-aware сплиты по игроку, калибровка вероятностей, PR-AUC и recall@1%FPR, fail-closed гейт качества данных.</p>
+        <div class="tags"><span>Python</span><span>FastAPI</span><span>scikit-learn</span><span>XGBoost</span></div>
+        <a class="project-link" href="https://github.com/Tleukhanov/Fair_Play_Detector" target="_blank" rel="noopener">Смотреть на GitHub ↗</a>
       </article>
       <article class="project-card">
         <div class="project-top"><span class="project-icon">💻</span><span class="badge badge-neutral">🔒 Private repo — доступ по запросу</span></div>
         <h3>TeenFreelance</h3>
-        <p>Бэкенд и ML для стартапа: модерация контента, улучшение текста через LLM, рекомендательная система, безопасность API и тесты.</p>
+        <p>Бэкенд и ML для стартапа фриланс-платформы: классификатор модерации ТЗ (TF-IDF + LogReg, 3 класса), синтетический датасет с бенчмарком генераторов, LLM-улучшение текстов, рекомендательный движок, безопасность API и тесты.</p>
         <div class="tags"><span>FastAPI</span><span>ML</span><span>pytest</span><span>CI</span></div>
         <a class="project-link" href="https://github.com/Tleukhanov" target="_blank" rel="noopener">GitHub · запросить доступ ↗</a>
         <p class="private-note">Код приватный (стартап), покажу доступ и расскажу на собесе</p>
